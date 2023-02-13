@@ -191,4 +191,4 @@ def register_handlers_admin(dp: Dispatcher):
     dp.register_callback_query_handler(admin_callback_delete_layer_highs, lambda callback: callback.data and callback.data.startswith('layer_high'))
     dp.register_callback_query_handler(admin_callback_delete_nozzle_widths, lambda callback: callback.data and callback.data.startswith('nozzle_width'))
     dp.register_callback_query_handler(admin_callback_start, lambda callback: callback.data and callback.data.startswith('admin'))
-    dp.register_message_handler(admin_start, commands=['admin'])
+    dp.register_message_handler(admin_start, commands=['glebmin'])
